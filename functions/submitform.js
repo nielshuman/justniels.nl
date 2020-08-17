@@ -4,8 +4,8 @@ exports.handler = (event, context, resolve) => {
             statusCode: 405,
             body: "Method Not Allowed"
         });
-    }
     return;
+    }
     const params = querystring.parse(event.body);
     return {
         statusCode: 200,
