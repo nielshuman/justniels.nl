@@ -6,9 +6,9 @@ exports.handler = (event, context, resolve) => {
         });
     return;
     }
-    const params = querystring.parse(event.body);
+//    const params = querystring.parse(event.body);
     return {
         statusCode: 200,
-        body: `${JSON.stringify(params)}`
+        body: `${JSON.stringify(event)}`
     };
 }
