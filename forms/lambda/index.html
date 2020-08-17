@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<div id="allcontainer">
+			<div id="container">
+				<h1> Forms with the lambda </h1>
+				<hr>
+				<div class="formcontainer">
+					<form action="/.netlify/functions/submitform" method="post">
+
+						<label for="vnaam">Voornaam</label>
+						<input type="text" id="vnaam" name="vnaam" placeholder="Pluisje">
+						
+						<label for="anaam">Last Name</label>
+						<input type="text" id="anaam" name="anaam" placeholder="The great">
+						
+						<label for="huid">Ik heb...</label>
+						<select id="huid" name="huid">
+							<option value="vacht">Vacht</option>
+							<option value="schubben">Schubben</option>
+							<option value="huid">Huid</option>
+						</select>
+
+						<span>Welk van deze vindt u een mooi, rond nummer?</span>
+						<div class="checkboxes">
+							<input type="checkbox" id="n1" name="n1" value="1">
+							<label for="n1"> 1 </label><br>
+							<input type="checkbox" id="n1024" name="n1024" value="true">
+							<label for="n1024"> 1024</label><br>
+							<input type="checkbox" id="n1000" name="n1000" value="true">
+							<label for="n1000"> 1000 </label><br>
+							<input type="checkbox" id="n4096" name="n4096" value="true">
+							<label for="n4096"> 4096 </label><br>
+							<input type="checkbox" id="n4500" name="n4500" value="true">
+							<label for="n4500"> 4500 </label><br>
+						</div>
+
+						<label for="Opmerkingen">Opmerkingen</label>
+						<textarea id="Opmerkingen" name="Opmerkingen" placeholder="Wat een vreselijk formulier!!1!1!!!" style="height:200px"></textarea>
+						<input type="submit" value="Verstuur">
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="main.css"></script>
+	</body>
+</html>
