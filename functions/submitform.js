@@ -1,14 +1,9 @@
-exports.handler = (event, context, resolve) => {
-    if (event.httpMethod !== "POST") {
-        callback(null, {
-            statusCode: 405,
-            body: "Method Not Allowed"
-        });
-    return;
-    }
-//    const params = querystring.parse(event.body);
+exports.handler = async (event, context) => {
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed" };
+  }
     return {
         statusCode: 200,
-        body: `${JSON.stringify(event)}`
+        body: event
     };
 }
