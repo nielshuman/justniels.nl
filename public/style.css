@@ -36,7 +36,7 @@ input[type="text"] {
     width: 1px
 }
 
-#loading:after {
+span:after {
     content: "#";
     animation-name: loader;
     animation-duration: 600ms;
@@ -64,4 +64,18 @@ input[type="text"] {
     99.99% {
         content: "-"
     }
+}
+
+a {
+	margin-top: 20;
+	color: grey;
+}
+
+#onder {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 20px
 }
