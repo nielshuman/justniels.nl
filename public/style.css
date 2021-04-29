@@ -68,7 +68,12 @@ span:after {
 
 a {
 	margin-top: 20;
-	color: grey;
+	color: #7d7d7d;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #bdbdbd;
 }
 
 #onder {
