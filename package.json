@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "sitewebding",
   "main": "main.js",
-  "scripts": {
-    "build-site": "npm i && netlify-lambda build functions"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UltraNiels/justniels.nl.git"
@@ -16,7 +13,4 @@
     "url": "https://github.com/UltraNiels/justniels.nl/issues"
   },
   "homepage": "https://github.com/UltraNiels/justniels.nl#readme",
-  "dependencies": {
-    "netlify-lambda": "^2.0.1"
-  }
 }
