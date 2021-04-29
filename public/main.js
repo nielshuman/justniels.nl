@@ -1,15 +1,14 @@
-let input = document.getElementById("load-text");
-let laden = document.getElementById("laden");
-let puntjepuntjepuntje = document.getElementById("puntjepuntjepuntje");
-function doeDingen() {
+const _ = document.getElementById;
+const input = _('load-text'), laden = _('loading'), ppp = _('puntjepuntjepuntje')
+const fix_everything = () => {
 	if (input.value.length == 0) {
 		input.style.width = '1px';
-		puntjepuntjepuntje.style.display = 'none';
+		ppp.style.display = 'none';
 	}
 	else {
 		input.style.width = (input.value.length * 12) + 'px';
-		puntjepuntjepuntje.style.display = 'inline';
+		ppp.style.display = 'inline';
 	}
 }
-input.oninput = () => {doeDingen();}
-doeDingen();
+input.oninput = fix_everything;
+fix_everything();
