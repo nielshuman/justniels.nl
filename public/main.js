@@ -1,4 +1,4 @@
-const _ = document.getElementById;
+const _ = document.getElementById.bind(document);
 const input = _('load-text'), laden = _('loading'), ppp = _('puntjepuntjepuntje')
 const fix_everything = () => {
 	if (input.value.length == 0) {

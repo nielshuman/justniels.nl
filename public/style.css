@@ -9,7 +9,7 @@ body {
     background: #000;
     text-align: center;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 1.5em;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,7 +22,8 @@ body {
     top: calc(50% - 10px);
     left: 0;
     width: 100%;
-    cursor: text
+    cursor: text;
+    font-size: 20px;
 }
 
 input[type="text"] {
