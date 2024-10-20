@@ -4,6 +4,7 @@
     gap: 3rem;
     justify-content: center;
     padding: 0 10rem;
+    padding-bottom: 3rem;
 }
 
 .creatiecard {
@@ -40,4 +41,8 @@
 .cardTitle {
     font-size: 30px;
     margin: 0;
+}
+
+.terug {
+    padding-bottom: 20px;
 }

@@ -9,11 +9,29 @@
     width: 1px
 }
 
-.spinding:after {
+.ppp:after {
     content: "#";
     animation-name: loader;
     animation-duration: 600ms;
     animation-iteration-count: infinite
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    top: calc(50% - 10px);
+    left: 0;
+    cursor: text;
+    font-size: 20px;
+}
+
+.onder {
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+overflow: hidden;
+padding-bottom: 20px
 }
 
 @keyframes loader {

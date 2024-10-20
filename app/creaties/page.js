@@ -1,5 +1,6 @@
 import { Creaties } from "@/creaties";
 import s from "./page.module.css";
+import Link from "next/link";
 
 export default function CreatiesPage() {
     return <>
@@ -10,6 +11,7 @@ export default function CreatiesPage() {
         <div className={s.grid + ' main'}>
             <Creaties />
         </div>
+        <TerugLink />
     </>
 }
 // takes image url or video url
@@ -27,4 +29,8 @@ export function Creatie({ title, image, video, url, description}) {
             <a href={url}> <button> Bekijk </button> </a>
         </div>
     </div>
+}
+
+function TerugLink() {
+    return <Link href="/" className={s.terug}>terug</Link>
 }
