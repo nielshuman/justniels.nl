@@ -65,7 +65,7 @@ function Creatie({ title, image, video, url, description}) {
         {image && <Image src={image} width={100} /> }
         {video && <video src={video} width={300} loop muted autoPlay/>}
         <div className={s.cardBody}>
-            <h2> {title} </h2>
+            <h2 className={s.cardTitle}> {title} </h2>
             <div> {description} </div>
             <a href={url}> <button> Bekijk </button> </a>
         </div>
