@@ -17,20 +17,33 @@ body {
 }
 
 a {
-margin-top: 20;
-color: #7d7d7d;
-text-decoration: none;
+  margin-top: 20;
+  color: #7d7d7d;
+  text-decoration: none;
 }
 
 a:hover {
-color: #bdbdbd;
+  color: #bdbdbd;
 }
 
 #onder {
-position: absolute;
-left: 0;
-bottom: 0;
-width: 100%;
-overflow: hidden;
-padding-bottom: 20px
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 20px
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.main {
+  margin-top: 10px;
+}
+
+.subtitle {
+  margin-top: 5px;
+  padding-bottom: 15px;
 }

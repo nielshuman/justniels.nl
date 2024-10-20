@@ -5,12 +5,12 @@ import s from "./page.module.css";
 
 export default function Home() {
   return <>
-      <LoadingDing />
-      <div id="onder"> <Link href="/keys/"> keys & andere dingen </Link> - <Link href="/creaties/"> Creaties </Link> </div>
+      <LoadingDing defaultValue={"Wachten todat hier iets leuks staat"}/>
+      <div id="onder"><Link href="/creaties/"> creaties </Link> - <Link href="/keys/"> keys & andere dingen </Link></div>
     </>
 }
 
-function LoadingDing() {
+function LoadingDing({defaultValue}) {
 
   useEffect(() => {
     const _ = document.getElementById.bind(document);
@@ -34,7 +34,7 @@ function LoadingDing() {
 
   return <div id="loading">
     <input className={s.input} id="load-text" type="text" style={{width: '432px'}} 
-      defaultValue="Wachten todat hier iets leuks staat"/>
+      defaultValue={defaultValue}/>
     <span className={s.spinding} id="puntjepuntjepuntje" style={{display: 'inline'}}>... </span>
   </div>
 }

@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
-    gap: 5rem;
+    gap: 3rem;
     justify-content: center;
     padding: 0 10rem;
 }
@@ -13,28 +13,31 @@
     background-color: #000000;
     border-radius: 10px;
     padding: 0;
-    border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.494);
-    transition: transform 0.5s;
+    /* border: 2px solid #fff; */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
 }
 
 .creatiecard:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
 }
 
-.cardBody {
-    padding: 1rem;
-    color: white;
-}
 
-.creatiecard img, .creatiecard video {
+.cardHeader img, .cardHeader video {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
+.cardBody {
+    font-size: 15px;
+    padding: 1rem;
+    color: white;
+}
+
 .cardTitle {
-    /* font-size: 1.5rem; */
+    font-size: 30px;
     margin: 0;
 }
