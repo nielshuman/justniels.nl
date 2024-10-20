@@ -14,7 +14,7 @@ export function Creaties() {
 
         <Creatie
             title="BPM Beast"
-            image="/bpmbeast.png"
+            image="/bpmbeast.webp"
             url="https://bpmbeast.justniels.nl/"
             description={<p>
                 Muzikale metronoom op basis van je eigen spotifybibliotheek.
@@ -22,7 +22,7 @@ export function Creaties() {
             } />
         <Creatie
             title="Het Spel Spel"
-            image="/hetspelspel.png"
+            image="/hetspelspel.webp"
             url="https://hetspelspel.netlify.app/"
             description={<p>
                 Een spel waarbij je moet spellen. Dit heb ik ooit toen ik 12 was voor mijn broertje gemaakt zodat hij op een leuke manier zijn woordenlijsten kon oefenen.
