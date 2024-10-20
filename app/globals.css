@@ -28,4 +28,6 @@ h1 {
 .subtitle {
   margin-top: 5px;
   padding-bottom: 15px;
+  padding-left: 2rem;
+  padding-right: 3rem;
 }
