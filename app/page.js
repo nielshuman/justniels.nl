@@ -1,12 +1,12 @@
 'use client';
 import Link from "next/link";
 import { useEffect } from "react";
-// import styles from "./page.module.css";
+import s from "./page.module.css";
 
 export default function Home() {
   return <>
       <LoadingDing />
-      <div id="onder"> <Link href="/keys/"> keys & andere dingen </Link> - <a href="https://stefan.justniels.nl:2001/">StefanCloud&#8482;</a> </div>
+      <div id="onder"> <Link href="/keys/"> keys & andere dingen </Link> - <Link href="/creaties/"> Creaties </Link> </div>
     </>
 }
 
@@ -33,7 +33,8 @@ function LoadingDing() {
   })
 
   return <div id="loading">
-    <input id="load-text" type="text" defaultValue="Wachten todat hier iets leuks staat" style={{width: '432px'}}/>
-    <span id="puntjepuntjepuntje" style={{display: 'inline'}}>... </span>
+    <input className={s.input} id="load-text" type="text" style={{width: '432px'}} 
+      defaultValue="Wachten todat hier iets leuks staat"/>
+    <span className={s.spinding} id="puntjepuntjepuntje" style={{display: 'inline'}}>... </span>
   </div>
 }
