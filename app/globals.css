@@ -1,10 +1,22 @@
+html, body {
+  min-height: 100vh;
+  margin: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   user-select: none;
   color: #fff;
   background: #000;
   text-align: center;
   font-family: monospace;
   font-size: 1.5em;
+}
+
+.main {
+  margin-top: 10px;
+  flex: 1;
 }
 
 a {
@@ -19,10 +31,6 @@ a:hover {
 
 h1 {
   margin-bottom: 0;
-}
-
-.main {
-  margin-top: 10px;
 }
 
 .subtitle {
