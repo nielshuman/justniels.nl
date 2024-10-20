@@ -1,6 +1,6 @@
 import { Creaties } from "@/creaties";
 import s from "./page.module.css";
-import Link from "next/link";
+import TerugLink from "@/components/TerugLink";
 
 export default function CreatiesPage() {
     return <>
@@ -29,8 +29,4 @@ export function Creatie({ title, image, video, url, description}) {
             <a href={url}> <button> Bekijk </button> </a>
         </div>
     </div>
-}
-
-function TerugLink() {
-    return <Link href="/" className={s.terug}>terug</Link>
 }
