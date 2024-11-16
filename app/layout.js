@@ -12,7 +12,11 @@ export default function RootLayout({ children }) {
       <body>
         {children}
       </body>
-      <Tracker url='https://analytics.caprover.justniels.nl' id='658ff237-a289-486c-b962-596fe199c1be' options={{detailed: true}}/>
+      <Tracker 
+        url='https://analytics.caprover.justniels.nl' 
+        domainId='658ff237-a289-486c-b962-596fe199c1be' 
+        options={{detailed: true}}
+      />
     </html>
   );
 }

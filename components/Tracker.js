@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
 import * as ackeeTracker from 'ackee-tracker';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-export default function Tracker({url, id, options}) {
+export default function Tracker({url, domainId, options}) {
     const [tracker, setTracker] = useState(null);
     const pathname = usePathname();
     
@@ -13,6 +13,6 @@ export default function Tracker({url, id, options}) {
     }, []);
 
     useEffect(() => {
-        tracker?.record(id)
-    }, [pathname, tracker]);
+        tracker?.record(domainId);
+    }, [pathname, tracker]); // run record on every path change (caused by router)
 }
