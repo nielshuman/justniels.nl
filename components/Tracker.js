@@ -9,7 +9,7 @@ export default function Tracker({url, id, options}) {
     const pathname = usePathname();
     
     useEffect(() => {
-        const tracker = ackeeTracker.create(url, options);
+        setTracker(ackeeTracker.create(url, options));
     }, []);
 
     useEffect(() => {
