@@ -14,6 +14,5 @@ export default function Tracker({url, id, options}) {
 
     useEffect(() => {
         tracker?.record(id)
-        console.log('recorded', id);
-    }, [pathname]);
+    }, [pathname, tracker]);
 }
