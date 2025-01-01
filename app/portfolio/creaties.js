@@ -1,14 +1,13 @@
-import { Creatie } from "./app/creaties/page";
+import { Creatie } from "./page";
 
-export function Creaties() {
+export default function Creaties() {
     return <>
         <Creatie
-            title="Pieuwpieuwgame"
-            video="/pieuwpieuwgame.webm"
-            url="https://pieuwpieuwgame.justniels.nl/"
+            title="HorsePowerRun"
+            image={"/hpr.png"}
+            url="https://horsepowerrun.nl/"
             description={<p>
-                Schietspelletje. Speel samen met vrienden!
-                Druk op M voor geluid. Samen gemaakt met <a href="https://piterpasma.nl/">Piter Pasma</a>.
+                Een website voor stichting HorsePowerRun die jaarlijks een toerrriet organiseert voor motorfietsen tot en met bouwjaar 1920.
                 </p>
             } />
 

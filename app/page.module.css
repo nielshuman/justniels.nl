@@ -17,12 +17,23 @@
 }
 
 .loading {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    top: calc(50% - 10px);
-    left: 0;
+    /* top: calc(50% - 10px); */
+    /* left: 0; */
     cursor: text;
     font-size: 20px;
+}
+
+.main_title {
+    margin: 0;
+    padding: 0;
+    /* transition: 0.5s; */
+}
+
+.animated_text {
+    transition: 0.5s;
+    max-height: 25px;
 }
 
 .onder {
@@ -32,6 +43,10 @@ bottom: 0;
 width: 100%;
 overflow: hidden;
 padding-bottom: 20px
+}
+
+.max_height_0 {
+    max-height: 0px;
 }
 
 @keyframes loader {

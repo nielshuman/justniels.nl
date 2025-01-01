@@ -1,12 +1,12 @@
-import { Creaties } from "@/creaties";
+import Creaties from "./creaties"
 import s from "./page.module.css";
 import TerugLink from "@/components/TerugLink";
 
 export default function CreatiesPage() {
     return <>
-        <h1> Creaties </h1>
+        <h1> Portfolio </h1>
         <p className="subtitle">
-            Een paar van de projecten die ik (soort van) af heb gemaakt.  
+            Enkele voorbeelden van eerder werk.
         </p>
         <div className={s.grid + ' main'}>
             <Creaties />
