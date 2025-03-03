@@ -6,7 +6,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  user-select: none;
+  /* user-select: none; */
   color: #fff;
   background: #000;
   text-align: center;

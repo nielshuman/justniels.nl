@@ -10,5 +10,13 @@ export default function Creaties() {
                 Een website voor stichting HorsePowerRun die jaarlijks een toerrit organiseert voor motorfietsen tot en met bouwjaar 1920.
                 </p>
             } />
+        <Creatie
+            title="Artemis Energie"
+            image={"/artemis.png"}
+            url={"https://artemisenergie.nl/"}
+            description={<p>
+                Een simpele website voor een bedrijf dat lezingen geeft over de energietransitie.
+                </p>
+            } />
     </>
 }

@@ -24,9 +24,15 @@ export function Creatie({ title, image, video, url, description}) {
             </a>
         </div>
         <div className={s.cardBody}>
-            <h2 className={s.cardTitle}> {title} </h2>
-            <div> {description} </div>
-            <a href={url}> <button> Bekijk </button> </a>
+            <div>
+                <h2 className={s.cardTitle}> {title} </h2>
+                <div> {description} </div>
+            </div>
+            <Button text="Bekijk" url={url} />
         </div>
     </div>
+}
+
+export function Button({text, url}) {
+    return <a href={url} className={s.button}> {text} </a>
 }
