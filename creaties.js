@@ -1,4 +1,4 @@
-import { Creatie } from "./app/creaties/page";
+import { Creatie } from "./app/_creaties/page";
 
 export function Creaties() {
     return <>
