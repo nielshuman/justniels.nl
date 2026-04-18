@@ -5,7 +5,7 @@ import s from "./page.module.css";
 
 export default function Home() {
   return <>
-      <AnimatedLoadingDing text={"onder constructie"}/>
+      <AnimatedLoadingDing text={"ONDER CONSTRUCTIE"}/>
       <div className={s.onder}><Link href="https://justniels.nl"> JustNiels <br></br> websiteontwikkeling en beheer </Link></div>
     </>
 }
