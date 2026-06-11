@@ -22,7 +22,7 @@ const sims = [
     },
   },
   {
-    title: "High priority rule",
+    title: "High priority radius",
     src: "/ants/wideradius.mp4",
     params: {
       "Max. Ants": "110",
