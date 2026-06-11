@@ -7,16 +7,16 @@ const sims = [
     title: "Normal parameters",
     src: "/ants/normal.mp4",
     params: {
-      "Max. Ants": "110",
+      "Max. ants": "110",
       "Noise": "20%",
-      "Priority yield radius": "2",
+      "Priority yield radius": "5",
     },
   },
   {
     title: "No priority",
     src: "/ants/nopriority.mp4",
     params: {
-      "Max. Ants": "110",
+      "Max. ants": "110",
       "Noise": "20%",
       "Priority yield radius": "0",
     },
@@ -25,27 +25,27 @@ const sims = [
     title: "High priority radius",
     src: "/ants/wideradius.mp4",
     params: {
-      "Max. Ants": "110",
+      "Max. ants": "110",
       "Noise": "20%",
-      "Priority yield radius": "2",
+      "Priority yield radius": "5",
     },
   },
   {
     title: "High noise",
     src: "/ants/noisy.mp4",
     params: {
-      "Max. Ants": "110",
+      "Max. ants": "110",
       "Noise": "50%",
-      "Priority yield radius": "2",
+      "Priority yield radius": "5",
     },
   },
 {
     title: "Large population",
     src: "/ants/manyants.mp4",
     params: {
-      "Max. Ants": "250",
+      "Max. ants": "250",
       "Noise": "20%",
-      "Priority yield radius": "2",
+      "Priority yield radius": "5",
     },
   },
   
